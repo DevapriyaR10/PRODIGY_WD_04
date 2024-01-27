@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaquires.css"/>
+    
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a onclick="scrollToSection('profile')">Deva Priya R </a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a onclick="scrollToSection('about')">About Me</a></li>
+                <li><a onclick="scrollToSection('education')">Education</a></li>
+                <li><a onclick="scrollToSection('skills')">Skills</a></li>
+                <li><a onclick="scrollToSection('projects')">Project</a></li>
+                <li><a onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Deva Priya R</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+              <span></span>
+              <span></span>
+              <span></span>  
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About Me</a></li>
+                <li><a href="#education" onclick="togglemenu()">Education</a></li>
+                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Project</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>  
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="profile.png" alt="Deva Priya profile picture" id="img">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Deva Priya R</h1>
+            <p class="section__text__p2">Cybersecurity Enthusiast | Python Developer | Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('resume.pdf')">Downlod CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>    
+            </div>
+            <div id="socials-container">
+                <img src="linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='//www.linkedin.com/in/deva-priya-r-8b6529281/'"/>
+
+                <img src="github.png" alt="My Github Profile" class="icon" onclick="location.href='//github.com/DevapriyaR10'"/>
+                
+                <img src="twitter.png" alt="My Twitter Profile" class="icon" onclick="location.href='//twitter.com/_Devapriya10_'"/>
+
+                <img src="instagram.png" alt="My Instagram Profile" class="icon" onclick="location.href='//www.instagram.com/_.devapriya10._/'"/>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <span class="s-3">
+        <img src="information-button.png" class="icons">
+        <h1 class="title">About Me</h1>
+        </span>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <p class="p-1">Hey! I'm Deva Priya R, a second-year Information Science student with a keen focus on cybersecurity, Python, and web development. In the realm of cybersecurity, I'm dedicated to fortifying digital spaces by learning ethical hacking techniques and implementing robust security measures. Python is my preferred tool for turning concepts into efficient solutions, spanning from scripting to automation. Additionally, I channel my creativity into crafting visually appealing and user-friendly websites using HTML, CSS, and JavaScript. Currently, my time is dedicated to hands-on projects, ranging from secure web applications to penetration testing. I thrive on solving coding puzzles and navigating the dynamic landscape of information science. If you share a passion for cybersecurity, Python, or web development, I'd love to connect and explore the exciting possibilities within the tech world together.</p>
+                </div>
+            </div>
+        </div>
+        <span class="s-3">
+        <img src="translate.png" class="g2">
+        <h1 class="languages-details">Languages</h1>
+        </span>
+        <div class="language-details-container">
+            <span class="p-2 language1">English</span>
+            <span class="p-2 language2">Hindi</span>
+            <span class="p-2 language1">Malayalam</span>
+            <span class="p-2 language1">Tamil</span>
+
+        </div>
+    </section>
+  <section id="education">
+    <span class="s-3">
+    <img src="mortarboard.png" class="icons">   
+    <h1 class="title e">Education</h1>
+    </span>
+    <div class="education-details-container">
+        <div class="education1">
+            <p class="p-3">Kendriya Vidhyalaya</p>
+            <p class="p-5"> 2010-2022</p>
+            <p class="p-4">Class: I to XII</p>
+        </div>
+        <div class="education2">
+            <p class="p-3">SJB Institute Of Technology</p>
+            <p class="p-5">Graduation: 2026</p>
+            <p class="p-4">Bachelor of Engineering in Information Science</p>
+        </div>
+    </div>
+    </section>
+    <section id="skills">
+    <div class="skills-details-container">
+        <span class="s-3">
+        <img src="skills.png" class="g1">
+        <h1 class="languages-details">Skills</h1>
+        </span>
+        <div class="btn-container">
+        <button onclick="hideShow()" class="b12">Technical Skills</button>
+        <button onclick="hideShow1()" class="b21">Soft Skills</button>
+        </div>
+        <div id="s1">
+            <span class="s-2"><img src="checkmark.png" class="icons">C Programming</span><br>
+            <span class="s-2"> <img src="checkmark.png" class="icons">Python</span><br>
+            <span class="s-2"> <img src="checkmark.png" class="icons">Penetration Testing</span><br>
+            <span class="s-2"><img src="checkmark.png" class="icons">HTML, CSS and Javascript</span><br>
+            <span class="s-2"><img src="checkmark.png" class="icons">Slide Presentation</span>
+        </div>
+        <div id="s2">
+            <span class="s-2"><img src="checkmark.png" class="icons">Communication </span><br>
+            <span class="s-2"><img src="checkmark.png" class="icons">Adaptability </span><br>
+            <span class="s-2"><img src="checkmark.png" class="icons">Meticulous </span><br>
+            <span class="s-2"><img src="checkmark.png" class="icons">Leadership </span><br>
+            <span class="s-2"><img src="checkmark.png" class="icons">Collaborative</span>
+        </div>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="email.png" alt="Email icon" class=" contact-icon email-icon"/>
+           <p class="C3" onclick="location.href='mailto:devapriyar6@gmail.com'">devapriyar6@gmail.com</p>
+        </div>
+        <div class="contact-info-container">
+            <img src="linkedin.png" alt="Linkedin icon" class="contact-icon"/>
+            <p class="C3" onclick="location.href='//www.linkedin.com/in/deva-priya-r-8b6529281/'">LinkedIn</p>
+        </div>
+        <div class="contact-info-container">
+            <img src="instagram.png" alt="Instagram icon" class="contact-icon"/>
+            <p class="C3" onclick="location.href='//www.instagram.com/_.devapriya10._/'">Instagram</p>
+        </div>
+        <div class="contact-info-container">
+            <img src="twitter.png" alt="Twitter icon" class="contact-icon"/>
+            <p class="C3" onclick="location.href='//twitter.com/_Devapriya10_'">Twitter</p>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &#169; 2024 Deva Priya R. All Rights Reserved </p>
+    </footer>
+  </section>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
